@@ -1,24 +1,25 @@
 import React from 'react'
+import Post from './Post'
 
-const Main = () => {
+interface Post {
+    color: string,
+    username: string,
+    likes: number
+}
+interface Props {
+    posts: Post[]
+}
+
+const Main = (props : Props) => {
   return (
-    <div className='flex flex-wrap w-full border-2 justify-center gap-8'>
+    <div className='flex flex-wrap w-full justify-center gap-8 overflow-y-auto'>
 
-        <div className="flex h-64 aspect-square bg-[#beefed]" >
-            <p>#beefed</p>
-        </div>
+        {props.posts.map(  (post) => ( 
+            
+            <Post post={post}/>
+       ))}
 
-        <div className="flex h-64 aspect-square bg-[#beefed]" >
-            <p>#beefed</p>
-        </div>
-
-        <div className="flex h-64 aspect-square bg-[#beefed]" >
-            <p>#beefed</p>
-        </div>
-
-        <div className="flex h-64 aspect-square bg-[#beefed]" >
-            <p>#beefed</p>
-        </div>
+        
 
     </div>
   )
