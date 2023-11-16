@@ -1,22 +1,27 @@
 import React from 'react'
-import Post from './Post'
+import Post from './Hue'
+import PostHue from './PostHue'
 
-interface Post {
+interface HueObject {
     color: string,
     username: string,
     likes: number
 }
 interface Props {
-    posts: Post[]
+    hues: HueObject[],
+    addHue: (color:string) => void
 }
 
 const Main = (props : Props) => {
   return (
     <div className='flex flex-wrap w-full justify-center gap-8 overflow-y-auto'>
 
-        {props.posts.map(  (post) => ( 
+        <PostHue addHue={props.addHue}/>
+
+
+        {props.hues.map(  (hue) => ( 
             
-            <Post post={post}/>
+            <Hue hue={hue}/>
        ))}
 
         
