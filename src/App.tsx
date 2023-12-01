@@ -24,8 +24,8 @@ function App() {
   const addNewHue = (color:string ) => 
   {
       console.log(color)
-      const newHue = {color, username: currentUser.username, id: hues[hues.length-1].id+1 , likes:0};
-      setHues( [...hues, newHue ] );
+      const newHue = {color, username: currentUser.username, id: length+1 , likes:0};
+      setHues( [newHue, ...hues ] );
   }
 
   return (
