@@ -10,6 +10,7 @@ interface Props {
   hue: HueObject;
 }
 
+
 const Hue = (props: Props) => {
   return (
     // Assuming the margin is to be adjusted horizontally, using mx-2 as an example

@@ -12,7 +12,7 @@ interface Props {
     addHue: (color:string) => void
 }
 
-const Main = (props : Props) => {
+const Main = ({hues, addHue} : Props) => {
   return (
     <div className='flex flex-col flex-grow bg-slate-800'>
       <Title></Title>
@@ -20,9 +20,12 @@ const Main = (props : Props) => {
           <div className='grid grid-cols-4 gap-8 overflow-y-auto'>
       
 
-        <PostHue addHue={props.addHue}/>
+        <PostHue addHue={addHue}/>
 
         {props.hues.map((hue) => ( 
+
+        {hues.map( (hue) => ( 
+            
             <Hue hue={hue}/>
         ))}
 
