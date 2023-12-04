@@ -2,10 +2,11 @@
 import Main from './components/Main'
 import Profile from './components/Profile'
 import { useEffect, useState } from 'react'
+import HueObject from './HueObject'
 
 function App() {
 
-  const [hues, setHues] = useState([]);
+  const [hues, setHues] = useState<HueObject[]>([]);
 
   const [currentUser] = useState({
     username: "kavery",
@@ -24,7 +25,7 @@ function App() {
   const addNewHue = (color:string ) => 
   {
       console.log(color)
-      const newHue = {color, username: currentUser.username, id: length+1 , likes:0};
+      const newHue = {color, username: currentUser.username, id: length+1 , likes:0, isLiked: false};
       setHues( [newHue, ...hues ] );
   }
 

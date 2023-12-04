@@ -1,10 +1,4 @@
-
-interface HueObject {
-  color: string;
-  username: string;
-  likes: number;
-}
-
+import HueObject from "../HueObject";
 interface Props {
   hue: HueObject;
 }
@@ -12,7 +6,7 @@ interface Props {
 function getTextColor(backgroundColor:string): string
 {
 
-  return "black";
+  return "black ";
 }
 
 const Hue = (props: Props) => {
