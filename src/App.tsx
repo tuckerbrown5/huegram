@@ -29,7 +29,7 @@ function App() {
 
   const addNewHue = (hex_code:string ) => 
   {
-      const newHue = {hex_code, username: currentUser.username, likes:0};
+      const newHue = {hex_code, username: currentUser.username, id: length+1, likes:0, isLiked: false};
       setHues( [newHue, ...hues ] );
   }
 

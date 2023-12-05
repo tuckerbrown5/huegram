@@ -1,5 +1,3 @@
-
-
 interface HueObject {
   hex_code: string;
   username: string;
@@ -14,7 +12,7 @@ const Hue = (props: Props) => {
   return (
     // Assuming the margin is to be adjusted horizontally, using mx-2 as an example
     <div
-      className="flex flex-col h-64 aspect-square rounded-3xl text-center justify-between mx-1 my-1"
+      className="flex flex-col h-64 aspect-square rounded-3xl text-center justify-between mx-0.5 my-0.5"
       style={{ backgroundColor: props.hue.hex_code }}
     >
       <p className="text-white text-2xl opacity-80">{props.hue.hex_code}</p>

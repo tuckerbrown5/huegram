@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 interface Props {
   addHue: (hex_code: string) => void;
 }
@@ -27,11 +28,10 @@ const PostHue = (props: Props) => {
         <button 
           onClick={() => props.addHue(hex_code)} 
           className="w-3/4 bg-white text-cyan-950 font-semibold py-2 px-4 rounded hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-opacity-50 focus:ring-slate-400"
-          style={{ transition: 'background-color 0.2s' }}
-        >
-          Post
-        </button>
+          style={{ transition: 'background-color 0.2s' }}>Post</button>
       </div>
+
+      
 
     </div>
   )

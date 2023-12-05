@@ -16,8 +16,8 @@ const Main = ({hues, addHue} : Props) => {
   return (
     <div className='flex flex-col flex-grow bg-slate-800'>
       <Title></Title>
-      <div className="flex flex-wrap w-full justify-center gap-8 overflow-y-auto m-5">
-          <div className='grid grid-cols-4 gap-8 overflow-y-auto'>
+      <div className="flex flex-wrap w-full justify-left gap-8 overflow-y-auto m-3">
+          <div className='grid grid-cols-3 gap-6 overflow-y-auto'>
       
 
         <PostHue addHue={addHue}/>
