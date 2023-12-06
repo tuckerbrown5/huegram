@@ -32,6 +32,7 @@ const PostHue = (props: Props) => {
       </div>
 
       
+        <Hue hue={ {color, username:"kaylee", likes:3, isLiked: false}} />
 
     </div>
   )

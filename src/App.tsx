@@ -27,6 +27,7 @@ function App() {
       .then((result) => setHues(result.data));
   }, []);
 
+  
   const addNewHue = (hex_code:string ) => 
   {
       const newHue = {hex_code, username: currentUser.username, id: length+1, likes:0, isLiked: false};

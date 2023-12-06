@@ -1,12 +1,8 @@
+import HueObject from '../HueObject'
 import Hue from './Hue'
 import PostHue from './PostHue'
 import Title from './Title'
 
-interface HueObject {
-    hex_code: string,
-    username: string,
-    likes: number
-}
 interface Props {
     hues: HueObject[],
     addHue: (color:string) => void
