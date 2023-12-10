@@ -4,5 +4,15 @@
     {"id": 3, "color": "#ff7f50", "username": "odomester", "likes": 20, "isLiked":false},
     {"id": 4, "color": "#ff6347", "username": "kaylee", "likes": 200, "isLiked":false},
     {"id": 5, "color": "#ff6747", "username": "abbieV", "likes": 13, "isLiked":false},
-    {"id": 6, "color": "#ff6747", "username": "abbieV", "likes": 14, "isLiked":false} 
+    {"id": 6, "color": "#ff6747", "username": "abbieV", "likes": 14, "isLiked":false},
+    {"id": 7, "color": "#e8c1f3", "username": "abbieV", "likes": 208, "isLiked": false},
+    {"id": 8, "color": "#d13469", "username": "abbieV", "likes": 205, "isLiked": false},
+    {"id": 9, "color": "#ab0551", "username": "user2", "likes": 179, "isLiked": false},
+    {"id": 10, "color": "#8a78e8", "username": "therealkaylee", "likes": 212, "isLiked": false},
+    {"id": 11, "color": "#41c473", "username": "user1", "likes": 176, "isLiked": false},
+    {"id": 12, "color": "#859715", "username": "odomester", "likes": 47, "isLiked": false},
+    {"id": 13, "color": "#fa4deb", "username": "odomester", "likes": 207, "isLiked": false},
+    {"id": 14, "color": "#807465", "username": "user3", "likes": 131, "isLiked": false},
+    {"id": 15, "color": "#fa7000", "username": "user3", "likes": 203, "isLiked": false},
+    {"id": 16, "color": "#e5a873", "username": "user3", "likes": 239, "isLiked": false}
 ]
