@@ -25,14 +25,15 @@ const Hue = ({hue, toggleLike}: Props) => {
       className="flex flex-col h-64 aspect-square rounded-3xl text-center justify-center items-center mx-0.5 my-0.5 relative"
       style={{ backgroundColor: hue.color, color: textColor }}
     >
+      {/* Absolute positioning of the button */}
       <button
         onClick={() => toggleLike && toggleLike(hue.id)}
+        className="absolute top-0 right-0 p-2" // Add padding for easier clicking
+        style={{ marginTop: '0.5rem', marginRight: '0.5rem' }} // Adjust as needed
       >
-        
         <FaHeart
-        className= {hue.isLiked ? "text-red-600 text-2xl": "text-2xl"}
+          className={hue.isLiked ? "text-red-600 text-2xl" : "text-2xl"}
         />
-
       </button>
 
       <div className="flex flex-col justify-center items-center flex-grow">

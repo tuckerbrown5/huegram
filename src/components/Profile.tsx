@@ -14,7 +14,7 @@ const Profile = ({hues}: Props) => {
 
 
   return (
-    <div className='top-32 right-0 bottom-1 flex flex-col p-4 items-center text-white w-1/5'>
+    <div className='fixed top-32 right-0 bottom-1 flex flex-col p-4 items-center text-white w-1/6'>
 
 
         <div className="palette">
@@ -30,7 +30,7 @@ const Profile = ({hues}: Props) => {
 
         <div className="text-center mt-6">
           <p className="font-semibold text-4xl">Likes:</p>
-          <p className="text-3xl mb-4">{jynx}</p>
+          <p className="text-3xl mb-8">{jynx}</p> 
         </div>
 
         <div className="text-center">

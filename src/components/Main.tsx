@@ -12,7 +12,7 @@ interface Props {
 
 const Main = ({hues, addHue, searchHues, toggleLike} : Props) => {
   return (
-    <div className='flex flex-col flex-grow bg-slate-800'>
+    <div className='flex flex-col flex-grow bg-slate-900'>
       <Title searchHues={searchHues}></Title>
       <div className='flex flex-wrap justify-center'>
       <PostHue addHue={addHue}/>
